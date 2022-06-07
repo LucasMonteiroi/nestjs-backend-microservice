@@ -1,0 +1,70 @@
+version: '3'
+
+services:
+  rabbitmq:
+    container_name: amqp_rabbitmq
+    image: rabbitmq:management
+    restart: always
+    ports:
+      - 5672:5672
+      - 15672:15672
+    networks:
+      backend-microservices:
+        ipv4_address: 192.168.0.10
+    volumes:
+      - type: bind
+        source: ${PWD}/docker/rabbitmq/rabbitmq.conf
+        target: /etc/rabbitmq/rabbitmq.conf
+      - type: bind
+        source: ${PWD}/docker/rabbitmq/definitions.json
+        target: /etc/rabbitmq/definitions.json
+
+  postgres:
+    container_name: db_postgres
+    image: postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_MULTIPLE_DATABASES: backend_microservice, backend_microservice_testing
+    ports:
+      - 5432:5432
+    volumes:
+      - ./docker/postgres:/docker-entrypoint-initdb.d/
+      - backend_data:/data/postgres
+    networks:
+      backend-microservices:
+        ipv4_address: 192.168.0.3
+
+  backend-microservice:
+    container_name: nestjs_backend_microservice
+    image: nestjs-backend-microservice:1.0.0
+    build:
+      context: .
+      target: development
+      dockerfile: ./docker/Dockerfile
+    env_file:
+      - ./docker/docker.env
+    command: yarn start:debug
+    ports:
+      - 3000:3000
+      - 9229:9229
+    networks:
+      backend-microservices:
+        ipv4_address: 192.168.0.4
+    volumes:
+      - ${PWD}:/usr/src/app
+      - /usr/src/app/node_modules
+    restart: unless-stopped
+    depends_on:
+      - postgres
+      - rabbitmq
+
+volumes:
+  backend_data: {}
+
+networks:
+  backend-microservices:
+    name: backend-microservices
+    ipam:
+      config:
+        - subnet: '192.168.0.0/24'
