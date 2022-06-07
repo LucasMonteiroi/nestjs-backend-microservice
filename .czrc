@@ -5,391 +5,391 @@
       "types": [
         {
           "emoji": "🎨",
-          "code": ":art:",
+          "code": ":art::",
           "description": "Improving structure / format of the code.",
           "name": "style"
         },
         {
           "emoji": "⚡️",
-          "code": ":zap:",
+          "code": ":zap::",
           "description": "Improving performance.",
           "name": "perf"
         },
         {
           "emoji": "🔥",
-          "code": ":fire:",
+          "code": ":fire::",
           "description": "Removing code or files.",
           "name": "prune"
         },
         {
           "emoji": "🐛",
-          "code": ":bug:",
+          "code": ":bug::",
           "description": "Fixing a bug.",
           "name": "fix"
         },
         {
           "emoji": "🚑",
-          "code": ":ambulance:",
+          "code": ":ambulance::",
           "description": "Critical hotfix.",
           "name": "quickfix"
         },
         {
           "emoji": "✨",
-          "code": ":sparkles:",
+          "code": ":sparkles::",
           "description": "Introducing new features.",
           "name": "feature"
         },
         {
           "emoji": "📝",
-          "code": ":pencil:",
+          "code": ":pencil::",
           "description": "Writing docs.",
           "name": "docs"
         },
         {
           "emoji": "🚀",
-          "code": ":rocket:",
+          "code": ":rocket::",
           "description": "Deploying stuff.",
           "name": "deploy"
         },
         {
           "emoji": "💄",
-          "code": ":lipstick:",
+          "code": ":lipstick::",
           "description": "Updating the UI and style files.",
           "name": "ui"
         },
         {
           "emoji": "🎉",
-          "code": ":tada:",
+          "code": ":tada::",
           "description": "Initial commit.",
           "name": "init"
         },
         {
           "emoji": "✅",
-          "code": ":white_check_mark:",
+          "code": ":white_check_mark::",
           "description": "Adding tests.",
           "name": "test"
         },
         {
           "emoji": "🔒",
-          "code": ":lock:",
+          "code": ":lock::",
           "description": "Fixing security issues.",
           "name": "security"
         },
         {
           "emoji": "🍎",
-          "code": ":apple:",
+          "code": ":apple::",
           "description": "Fixing something on macOS.",
           "name": "osx"
         },
         {
           "emoji": "🐧",
-          "code": ":penguin:",
+          "code": ":penguin::",
           "description": "Fixing something on Linux.",
           "name": "linux"
         },
         {
           "emoji": "🏁",
-          "code": ":checkered_flag:",
+          "code": ":checkered_flag::",
           "description": "Fixing something on Windows.",
           "name": "windows"
         },
         {
           "emoji": "🤖",
-          "code": ":robot:",
+          "code": ":robot::",
           "description": "Fixing something on Android.",
           "name": "android"
         },
         {
           "emoji": "🍏",
-          "code": ":green_apple:",
+          "code": ":green_apple::",
           "description": "Fixing something on iOS.",
           "name": "ios"
         },
         {
           "emoji": "🔖",
-          "code": ":bookmark:",
+          "code": ":bookmark::",
           "description": "Releasing / Version tags.",
           "name": "release"
         },
         {
           "emoji": "🚨",
-          "code": ":rotating_light:",
+          "code": ":rotating_light::",
           "description": "Removing linter warnings.",
           "name": "lint"
         },
         {
           "emoji": "🚧",
-          "code": ":construction:",
+          "code": ":construction::",
           "description": "Work in progress.",
           "name": "wip"
         },
         {
           "emoji": "💚",
-          "code": ":green_heart:",
+          "code": ":green_heart::",
           "description": "Fixing CI Build.",
           "name": "fix-ci"
         },
         {
           "emoji": "⬇️",
-          "code": ":arrow_down:",
+          "code": ":arrow_down::",
           "description": "Downgrading dependencies.",
           "name": "downgrade"
         },
         {
           "emoji": "⬆️",
-          "code": ":arrow_up:",
+          "code": ":arrow_up::",
           "description": "Upgrading dependencies.",
           "name": "upgrade"
         },
         {
           "emoji": "📌",
-          "code": ":pushpin:",
+          "code": ":pushpin::",
           "description": "Pinning dependencies to specific versions.",
           "name": "pushpin"
         },
         {
           "emoji": "👷",
-          "code": ":construction_worker:",
+          "code": ":construction_worker::",
           "description": "Adding CI build system.",
           "name": "ci"
         },
         {
           "emoji": "📈",
-          "code": ":chart_with_upwards_trend:",
+          "code": ":chart_with_upwards_trend::",
           "description": "Adding analytics or tracking code.",
           "name": "analytics"
         },
         {
           "emoji": "♻️",
-          "code": ":recycle:",
+          "code": ":recycle::",
           "description": "Refactoring code.",
           "name": "refactoring"
         },
         {
           "emoji": "🐳",
-          "code": ":whale:",
+          "code": ":whale::",
           "description": "Work about Docker.",
           "name": "docker"
         },
         {
           "emoji": "➕",
-          "code": ":heavy_plus_sign:",
+          "code": ":heavy_plus_sign::",
           "description": "Adding a dependency.",
           "name": "dep_add"
         },
         {
           "emoji": "➖",
-          "code": ":heavy_minus_sign:",
+          "code": ":heavy_minus_sign::",
           "description": "Removing a dependency.",
           "name": "dep_rm"
         },
         {
           "emoji": "🔧",
-          "code": ":wrench:",
+          "code": ":wrench::",
           "description": "Changing configuration files.",
           "name": "config"
         },
         {
           "emoji": "🌐",
-          "code": ":globe_with_meridians:",
+          "code": ":globe_with_meridians::",
           "description": "Internationalization and localization.",
           "name": "i18n"
         },
         {
           "emoji": "✏️",
-          "code": ":pencil2:",
+          "code": ":pencil2::",
           "description": "Fixing typos.",
           "name": "typo"
         },
         {
           "emoji": "💩",
-          "code": ":poop:",
+          "code": ":poop::",
           "description": "Writing bad code that needs to be improved.",
           "name": "poo"
         },
         {
           "emoji": "⏪",
-          "code": ":rewind:",
+          "code": ":rewind::",
           "description": "Reverting changes.",
           "name": "revert"
         },
         {
           "emoji": "🔀",
-          "code": ":twisted_rightwards_arrows:",
+          "code": ":twisted_rightwards_arrows::",
           "description": "Merging branches.",
           "name": "merge"
         },
         {
           "emoji": "📦",
-          "code": ":package:",
+          "code": ":package::",
           "description": "Updating compiled files or packages.",
           "name": "dep-up"
         },
         {
           "emoji": "👽",
-          "code": ":alien:",
+          "code": ":alien::",
           "description": "Updating code due to external API changes.",
           "name": "compat"
         },
         {
           "emoji": "🚚",
-          "code": ":truck:",
+          "code": ":truck::",
           "description": "Moving or renaming files.",
           "name": "mv"
         },
         {
           "emoji": "📄",
-          "code": ":page_facing_up:",
+          "code": ":page_facing_up::",
           "description": "Adding or updating license.",
           "name": "license"
         },
         {
           "emoji": "💥",
-          "code": ":boom:",
+          "code": ":boom::",
           "description": "Introducing breaking changes.",
           "name": "breaking"
         },
         {
           "emoji": "🍱",
-          "code": ":bento:",
+          "code": ":bento::",
           "description": "Adding or updating assets.",
           "name": "assets"
         },
         {
           "emoji": "👌",
-          "code": ":ok_hand:",
+          "code": ":ok_hand::",
           "description": "Updating code due to code review changes.",
           "name": "review"
         },
         {
           "emoji": "♿️",
-          "code": ":wheelchair:",
+          "code": ":wheelchair::",
           "description": "Improving accessibility.",
           "name": "access"
         },
         {
           "emoji": "💡",
-          "code": ":bulb:",
+          "code": ":bulb::",
           "description": "Documenting source code.",
           "name": "docs-code"
         },
         {
           "emoji": "🍻",
-          "code": ":beers:",
+          "code": ":beers::",
           "description": "Writing code drunkenly.",
           "name": "beer"
         },
         {
           "emoji": "💬",
-          "code": ":speech_balloon:",
+          "code": ":speech_balloon::",
           "description": "Updating text and literals.",
           "name": "texts"
         },
         {
           "emoji": "🗃",
-          "code": ":card_file_box:",
+          "code": ":card_file_box::",
           "description": "Performing database related changes.",
           "name": "db"
         },
         {
           "emoji": "🔊",
-          "code": ":loud_sound:",
+          "code": ":loud_sound::",
           "description": "Adding logs.",
           "name": "log-add"
         },
         {
           "emoji": "🔇",
-          "code": ":mute:",
+          "code": ":mute::",
           "description": "Removing logs.",
           "name": "log-rm"
         },
         {
           "emoji": "👥",
-          "code": ":busts_in_silhouette:",
+          "code": ":busts_in_silhouette::",
           "description": "Adding contributor(s).",
           "name": "contrib-add"
         },
         {
           "emoji": "🚸",
-          "code": ":children_crossing:",
+          "code": ":children_crossing::",
           "description": "Improving user experience / usability.",
           "name": "ux"
         },
         {
           "emoji": "🏗",
-          "code": ":building_construction:",
+          "code": ":building_construction::",
           "description": "Making architectural changes.",
           "name": "arch"
         },
         {
           "emoji": "📱",
-          "code": ":iphone:",
+          "code": ":iphone::",
           "description": "Working on responsive design.",
           "name": "iphone"
         },
         {
           "emoji": "🤡",
-          "code": ":clown_face:",
+          "code": ":clown_face::",
           "description": "Mocking things.",
           "name": "clown-face"
         },
         {
           "emoji": "🥚",
-          "code": ":egg:",
+          "code": ":egg::",
           "description": "Adding an easter egg.",
           "name": "egg"
         },
         {
           "emoji": "🙈",
-          "code": ":see_no_evil:",
+          "code": ":see_no_evil::",
           "description": "Adding or updating a .gitignore file.",
           "name": "see-no-evil"
         },
         {
           "emoji": "📸",
-          "code": ":camera_flash:",
+          "code": ":camera_flash::",
           "description": "Adding or updating snapshots.",
           "name": "camera-flash"
         },
         {
           "emoji": "⚗",
-          "code": ":alembic:",
+          "code": ":alembic::",
           "description": "Experimenting new things.",
           "name": "experiment"
         },
         {
           "emoji": "🔍",
-          "code": ":mag:",
+          "code": ":mag::",
           "description": "Improving SEO.",
           "name": "seo"
         },
         {
           "emoji": "☸️",
-          "code": ":wheel_of_dharma:",
+          "code": ":wheel_of_dharma::",
           "description": "Work about Kubernetes.",
           "name": "k8s"
         },
         {
           "emoji": "🏷️",
-          "code": ":label:",
+          "code": ":label::",
           "description": "Adding or updating types (Flow, TypeScript).",
           "name": "types"
         },
         {
           "emoji": "🌱",
-          "code": ":seedling:",
+          "code": ":seedling::",
           "description": "Adding or updating seed files.",
           "name": "seed"
         },
         {
           "emoji": "🚩",
-          "code": ":triangular_flag_on_post:",
+          "code": ":triangular_flag_on_post::",
           "description": "Adding, updating, or removing feature flags.",
           "name": "flags"
         },
         {
           "emoji": "💫",
-          "code": ":dizzy:",
+          "code": ":dizzy::",
           "description": "Adding or updating animations and transitions.",
           "name": "animation"
         }
