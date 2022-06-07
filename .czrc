@@ -394,7 +394,12 @@
           "name": "animation"
         }
       ],
-      "scopes": [],
+      "scopes": [
+        "docker",
+        "modules",
+        "config",
+        "tests"
+      ],
       "scopeOverrides": {
         "fix": [
           {
