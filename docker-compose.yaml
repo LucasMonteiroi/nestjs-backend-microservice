@@ -22,10 +22,8 @@ services:
   postgres:
     container_name: db_postgres
     image: postgres
-    environment:
-      POSTGRES_USER: root
-      POSTGRES_PASSWORD: root
-      POSTGRES_MULTIPLE_DATABASES: backend_microservice, backend_microservice_testing
+    env_file:
+      - ./docker/docker.env
     ports:
       - 5432:5432
     volumes:
