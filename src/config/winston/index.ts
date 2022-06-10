@@ -4,7 +4,6 @@ import {
   WinstonModuleOptionsFactory,
 } from 'nest-winston';
 import * as winston from 'winston';
-import DailyRotateFile from 'winston-daily-rotate-file';
 
 @Injectable()
 export class WinstonConfigService implements WinstonModuleOptionsFactory {
