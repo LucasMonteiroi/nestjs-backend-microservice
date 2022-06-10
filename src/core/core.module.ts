@@ -1,9 +1,11 @@
 import { WinstonConfigService, TypeOrmService } from '@config';
-import { Module } from '@nestjs/common';
+import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { WinstonModule } from 'nest-winston';
 import { HealthModule } from 'src/health/health.module';
+import { MorganMiddleware } from './middlewares/morgan.middleware';
+import helmet from 'helmet';
 
 @Module({
   controllers: [],
@@ -21,4 +23,18 @@ import { HealthModule } from 'src/health/health.module';
     HealthModule,
   ],
 })
-export class CoreModule {}
+export class CoreModule {
+  configure(consumer: MiddlewareConsumer) {
+    consumer
+      .apply(
+        helmet({
+          hidePoweredBy: true,
+          xssFilter: true,
+          crossOriginOpenerPolicy: false,
+          crossOriginResourcePolicy: false,
+        }),
+        MorganMiddleware,
+      )
+      .forRoutes('*');
+  }
+}
