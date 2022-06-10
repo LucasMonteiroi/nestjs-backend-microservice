@@ -11,7 +11,7 @@
       "port": 9229,
       "address": "0.0.0.0",
       "localRoot": "${workspaceFolder}",
-      "remoteRoot": "/usr/src/app",
+      "remoteRoot": "/app",
       "protocol": "inspector",
       "skipFiles": ["<node_internals>/**"]
     }
