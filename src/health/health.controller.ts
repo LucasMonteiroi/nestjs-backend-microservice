@@ -6,7 +6,9 @@ import {
   MemoryHealthIndicator,
   TypeOrmHealthIndicator,
 } from '@nestjs/terminus';
+import { ApiOperation, ApiTags } from '@nestjs/swagger';
 
+@ApiTags('health')
 @Controller('health')
 export class HealthController {
   constructor(
@@ -18,6 +20,7 @@ export class HealthController {
 
   @Get('/database')
   @HealthCheck()
+  @ApiOperation({ summary: 'Database health check' })
   async checkDatabases() {
     try {
       const check = await this.health.check([
@@ -34,12 +37,14 @@ export class HealthController {
   }
 
   @Get('/storage')
+  @HealthCheck()
+  @ApiOperation({ summary: 'Storage health check' })
   async checkStorage() {
     try {
       return this.health.check([
         () =>
           this.diskHealthIndicator.checkStorage('disk health', {
-            thresholdPercent: 0.75,
+            threshold: 250 * 1024 * 1024 * 1024,
             path: '/',
           }),
       ]);
@@ -51,30 +56,19 @@ export class HealthController {
     }
   }
 
-  @Get('/memory-heap')
-  async checkMemoryHeap() {
+  @Get('/memory')
+  @HealthCheck()
+  @ApiOperation({ summary: 'Memory heap ans rss health check' })
+  async checkMemory() {
     try {
       return this.health.check([
-        () =>
+        async () =>
           this.memoryHealthIndicator.checkHeap(
-            'memory heap',
-            300 * 1024 * 1024,
+            'memory_heap',
+            200 * 1024 * 1024,
           ),
-      ]);
-    } catch (e) {
-      throw new InternalServerErrorException({
-        statusCode: 500,
-        message: 'http.serverError.internalServerError',
-      });
-    }
-  }
-
-  @Get('/memory-rss')
-  async checkMemoryRss() {
-    try {
-      return this.health.check([
-        () =>
-          this.memoryHealthIndicator.checkRSS('memory RSS', 300 * 1024 * 1024),
+        async () =>
+          this.memoryHealthIndicator.checkRSS('memory_rss', 3000 * 1024 * 1024),
       ]);
     } catch (e) {
       throw new InternalServerErrorException({
