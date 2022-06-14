@@ -10,6 +10,7 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "format": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\"",
+    "bump-patch": "yarn version --new-version patch",
     "commit": "cz",
     "start": "nest start",
     "start:dev": "nest start --watch",
