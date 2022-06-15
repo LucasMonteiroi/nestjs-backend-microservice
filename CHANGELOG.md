@@ -1,5 +1,31 @@
 # Changelog
 
+<a name="0.0.3"></a>
+## 0.0.3 (2022-06-15)
+
+### Added
+
+- ✨ : (config) apply changelog [[d6d326a](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/d6d326a0b5d12b317ac4ffc43568d4314cfb17d6)]
+
+### Fixed
+
+- 🐛 : (modules) file name winston log [[10f5bf0](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/10f5bf097cbdca23ec0bb7dc9b423bd20fc71008)]
+
+### Miscellaneous
+
+-  v0.0.3 [[dde8af0](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/dde8af07f229f845affa1668b6df0ab7dea35ee2)]
+-  Merge branch &#x27;hotfix/log-file&#x27; into develop [[4e15e2b](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/4e15e2b9db4afd4aacb4aa05f3032961f5794481)]
+-  Merge branch &#x27;feat/changelog&#x27; into develop [[c62b051](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/c62b0512feab6ced4fcb484d356cce65c1002514)]
+
+
+<a name="0.0.1"></a>
+## 0.0.1 (2022-06-15)
+
+### Miscellaneous
+
+-  v0.0.1 [[ff79559](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ff79559f939874cf2a4b9a5526ce11806e98eae1)]
+
+
 <a name="0.0.2"></a>
 ## 0.0.2 (2022-06-15)
 
