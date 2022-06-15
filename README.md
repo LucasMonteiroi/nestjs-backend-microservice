@@ -177,7 +177,7 @@ To generate a new version, just run this command passing the type of version `pa
 yarn release patch # minor or major
 ```
 
-This command will update version on `package.json`, generate the `CHANGELOG.md` based on [CZ Emoji Commits](https://github.com/ngryman/cz-emoji) and push to branch
+This command will update version on `package.json`, generate the [`CHANGELOG.md`](https://github.com/LucasMonteiroi/nestjs-backend-microservice/blob/develop/CHANGELOG.md) based on [CZ Emoji Commits](https://github.com/ngryman/cz-emoji) and push to branch
 
 ## Configuration
 
