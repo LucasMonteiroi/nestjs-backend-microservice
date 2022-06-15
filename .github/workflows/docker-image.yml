@@ -11,10 +11,8 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Get Dockerfile
-        run: cd /home/runner/work/nestjs-backend-microservice/nestjs-backend-microservice
-        
-      - name: Get Dockerfile
+      - uses: actions/checkout@v3
+      - name: Get Dockerfile      
         run: ls -la
         
       - uses: actions/checkout@v3
