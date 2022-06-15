@@ -40,9 +40,9 @@ export class WinstonConfigService implements WinstonModuleOptionsFactory {
 
   filePrefix() {
     return [
-      new Date().getUTCFullYear().toString(),
-      new Date().getUTCMonth().toString().padStart(2, '0'),
-      new Date().getUTCDay().toString().padStart(2, '0'),
+      new Date().getFullYear().toString(),
+      new Date().getMonth().toString().padStart(2, '0'),
+      new Date().getDate().toString().padStart(2, '0'),
     ].join('-');
   }
 
