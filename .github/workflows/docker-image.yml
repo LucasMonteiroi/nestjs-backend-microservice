@@ -12,7 +12,9 @@ jobs:
 
     steps:
       - name: Get Dockerfile
-        working-directory: ./
+        run: cd /home/runner/work/nestjs-backend-microservice/nestjs-backend-microservice
+        
+      - name: Get Dockerfile
         run: ls -la
         
       - uses: actions/checkout@v3
