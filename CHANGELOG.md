@@ -1,5 +1,19 @@
 # Changelog
 
+<a name="0.0.4"></a>
+## 0.0.4 (2022-06-15)
+
+### Changed
+
+- ♻️ :  add push to update changelog [[d06220d](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/d06220d107a738014b93dadd65664a6d83156ae0)]
+- ♻️ :  bump release script [[0f82a96](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/0f82a96e21c18c6f7fbe26f325cda3a0829a2f86)]
+
+### Miscellaneous
+
+-  v0.0.4 [[829d7ed](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/829d7ed8a4d2ed52bddd91cd323b7b7918b1d10f)]
+- 📝 :  update changelog [[b0936bb](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/b0936bbdf733b56b2d7f2358724604ff98d40349)]
+
+
 <a name="0.0.3"></a>
 ## 0.0.3 (2022-06-15)
 
