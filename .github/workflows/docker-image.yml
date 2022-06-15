@@ -12,6 +12,7 @@ jobs:
 
     steps:
       - name: Get Dockerfile
+        working-directory: ./
         run: ls -la
         
       - uses: actions/checkout@v3
