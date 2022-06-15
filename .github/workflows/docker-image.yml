@@ -12,9 +12,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Get Dockerfile      
-        run: ls -la
-        
+      - name: Get Dockerfile
+        run: cp ./docker/Dockerfile Dockerfile
+
       - uses: actions/checkout@v3
       - name: Build the Docker image
-        run: docker build ./docker --tag nestjs-backend-microservice:$(date +%s)
+        run: docker build . --tag nestjs-backend-microservice:$(date +%s)
