@@ -1,6 +1,6 @@
 {
   "name": "nestjs-microservice",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "",
   "author": "",
   "private": true,
@@ -13,6 +13,7 @@
     "bump:patch": "yarn version --new-version patch",
     "bump:minor": "yarn version --new-version minor",
     "bump:major": "yarn version --new-version major",
+    "release": "node scripts/bump-release.js",
     "commit": "cz",
     "start": "nest start",
     "start:dev": "nest start --watch",
