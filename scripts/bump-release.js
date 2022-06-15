@@ -22,7 +22,25 @@ switch (version) {
 
 console.log(patch);
 
-spawn('yarn', [patch, '&&', 'yarn', 'gitmoji-changelog'], {
-  stdio: 'inherit',
-  shell: true,
-});
+spawn(
+  'yarn',
+  [
+    patch,
+    '&&',
+    'yarn',
+    'gitmoji-changelog',
+    '&&',
+    'git',
+    'add',
+    '.',
+    '&&',
+    'git',
+    'commit',
+    '-m',
+    '":pencil:: update CHANGELOG.md"',
+  ],
+  {
+    stdio: 'inherit',
+    shell: true,
+  },
+);
