@@ -38,6 +38,9 @@ spawn(
     'commit',
     '-m',
     '":pencil:: update CHANGELOG.md"',
+    '&&',
+    'git',
+    'push',
   ],
   {
     stdio: 'inherit',
