@@ -11,6 +11,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - name: Get Dockerfile
+        run: ls -la
+        
       - uses: actions/checkout@v3
       - name: Build the Docker image
         run: docker build ./docker --tag nestjs-backend-microservice:$(date +%s)
