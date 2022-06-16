@@ -4,7 +4,7 @@
 [![GitHub package.json version](https://img.shields.io/github/package-json/v/lucasmonteiroi/nestjs-backend-microservice?style=flat-square)](https://github.com/LucasMonteiroi/nestjs-backend-microservice/blob/develop/package.json)
 [![GitHub repo size](https://img.shields.io/github/repo-size/lucasmonteiroi/nestjs-backend-microservice?style=flat-square)](https://github.com/LucasMonteiroi/nestjs-backend-microservice)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lucasmonteiroi/nestjs-backend-microservice?style=flat-square)
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lucasmonteiroi/nestjs-backend-microservice/Docker%20Image%20CI?style=flat-square)
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lucasmonteiroi/nestjs-backend-microservice/CI)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://github.com/LucasMonteiroi/nestjs-backend-microservice/compare)
 ![GitHub](https://img.shields.io/github/license/lucasmonteiroi/nestjs-backend-microservice?style=flat-square)
 
@@ -23,24 +23,25 @@ What is needed to set up the dev environment. For instance, global dependencies 
 ## Project structure
 
 ```
-.czrc
-.env.example
-├─ .eslintrc.js
+🗃️
+├─ .czrc
+├─ .env.example
+├─ .eslintrc.js
 ├─ .github
 │  └─ workflows
-│     ├─ deploy-main.yml
-│     └─ docker-image.yml
+│     ├─ cd.yml
+│     ├─ ci.yml
+│     └─ greetings.yml
 ├─ .gitignore
 ├─ .husky
-│  └─ commit-msg
-├─ .nvmrc
-├─ .prettierrc
+│  └─ commit-msg
+├─ .nvmrc
+├─ .prettierrc
 ├─ .vscode
-│  ├─ launch.json
-│  └─ tasks.json
+│  ├─ launch.json
+│  └─ tasks.json
 ├─ CHANGELOG.md
 ├─ LICENSE
-├─ LICENSE.MD
 ├─ README.md
 ├─ commitlint.config.js
 ├─ docker-compose.yaml
