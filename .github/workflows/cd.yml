@@ -69,6 +69,10 @@ jobs:
       - name: Set up Docker Buildx
         id: buildx
         uses: docker/setup-buildx-action@v1
+        
+      - uses: actions/checkout@v3
+      - name: Get Dockerfile
+        run: cp ./docker/Dockerfile Dockerfile
 
       - id: push-image
         name: Build image and push to Docker Hub and GitHub Container Registry
