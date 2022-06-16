@@ -1,5 +1,63 @@
 # Changelog
 
+<a name="0.0.5"></a>
+## 0.0.5 (2022-06-16)
+
+### Added
+
+- 👷‍♂️ :  update actions [[134b167](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/134b1671367a6e8394c65b8ae0a9ad8adf9a05ce)]
+- 👷‍♂️ :  add deployment ci [[c5d4528](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/c5d45284dce4b4742561b5c8a6fcade663836be5)]
+- 👷‍♂️ :  create action [[8525ee7](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/8525ee716fdf189da4b187d1df8616783de6b34e)]
+
+### Changed
+
+- ⏪ :  deployment yml [[4c8a799](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/4c8a799f4a1df386770f904353c8f451286a629e)]
+
+### Fixed
+
+- 💚 :  update cd yml [[509ab00](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/509ab00775a05f9b7cfccb060ee89f438360f789)]
+- 💚 :  update tags on CD [[f76dbe2](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/f76dbe2ecd1d53ce1e0d6aded216d9d09671303e)]
+- 💚 :  update docker-image yml [[5c85b99](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/5c85b995671cf94f43e2c8deb7262b48008b3a3f)]
+- 💚 :  update docker image action [[99875af](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/99875af2ed3ed8b949f6526aacf2b4393e1fe4b0)]
+- 💚 :  update docker build image [[3214164](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/3214164816f9071680923efe951b66dbd37c659b)]
+- 💚 :  add step to ci [[eb1fe59](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/eb1fe59a1c67359e2e450bfd608db8c03f097963)]
+- 💚 :  fix docker build [[172ac3d](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/172ac3d51bf6e7f880395d0d4f23dc657f143dbc)]
+
+### Miscellaneous
+
+-  v0.0.5 [[e523c1b](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/e523c1b959e7cff7adcab0b1324f7ecc8117e8a6)]
+- 📝 :  update readme [[ca22683](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ca226835400511a817b682c95fea4f003b8f2798)]
+-  Update cd.yml [[7997bc8](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/7997bc80879c167b7f0d433dd4c1ed4d26df53f0)]
+-  Update cd.yml [[5c1b7c3](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/5c1b7c3b7d845db8cd00eac0405e6ea10d4badd5)]
+-  Update cd.yml [[c617fb4](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/c617fb4c53b41d2de173bdfa171cdb34b5c54268)]
+-  Update cd.yml [[dbbdac7](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/dbbdac7e07535e2151eeb77c7562a25deb3edeb9)]
+-  Update cd.yml [[71f8e70](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/71f8e70eacfd4dd98db2ae0917aae02066a5367f)]
+-  Update cd.yml [[f422882](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/f422882ccfa777f2d94d759e57885eea02fbd562)]
+-  Update cd.yml [[6d85f97](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/6d85f97f9445f0945be4715198f463efad55f513)]
+-  Update cd.yml [[ad32d7c](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ad32d7cd7a48925d924adada6ade1aa2cf068131)]
+-  Merge pull request [#17](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/17) from LucasMonteiroi/feat/workflows [[38b27ac](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/38b27ac3640cdb3bf2edc322d446a4211c8d6a7c)]
+-  Merge pull request [#16](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/16) from LucasMonteiroi/feat/workflows [[a229d9b](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/a229d9bb94590efc85ffb8e54c05dd99793070b5)]
+-  Merge pull request [#15](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/15) from LucasMonteiroi/feat/workflows [[18f3407](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/18f3407e8ebe8ff469821182ff71a2d5d59155b5)]
+- 📝 :  update readme and delete duplicated license [[81b9e92](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/81b9e92da2a42289f480a2fe2485c4115c2362d1)]
+-  Merge branch &#x27;develop&#x27; of https://github.com/LucasMonteiroi/nestjs-backend-microservice into develop [[318be95](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/318be951294f68a985cac3b989b981e6196d3161)]
+- 📝 :  update readme [[e7bf7ff](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/e7bf7ff49ccf8b524f7aa850d51045fa21185983)]
+-  Merge pull request [#14](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/14) from LucasMonteiroi/add-license-1 [[45a8777](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/45a87778aa68e81264a4c987681135bb5570bdcd)]
+-  Create LICENSE.MD [[383d3d3](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/383d3d3d991a07084ee8a0881e07265606d33ddb)]
+-  Merge pull request [#12](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/12) from LucasMonteiroi/feat/actions [[6688590](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/6688590dfc52815ad3e43c884233d7a076cec250)]
+-  Merge branch &#x27;develop&#x27; into feat/actions [[aaab4bd](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/aaab4bdd2110e6dec727ba8bedd150c7db50e538)]
+-  Update docker-image.yml [[8e75d07](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/8e75d070db14c92741ced3eeb77bbba729c50461)]
+-  Update docker-image.yml [[0f804e1](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/0f804e1744dfe84f30528d383600be153676d1f0)]
+-  Update docker-image.yml [[5d1fef2](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/5d1fef24659ef6abaae5b1c507c8eaf9ea36eac9)]
+-  Update docker-image.yml [[7ab974b](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/7ab974bf1e239d07fa261098d8c4fcefc8810ec5)]
+-  Merge pull request [#11](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/11) from LucasMonteiroi/feat/actions [[864af39](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/864af3932e24dfbe8de82a3b4282726119d162e9)]
+-  Merge branch &#x27;develop&#x27; into feat/actions [[c912f3c](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/c912f3c0285afe21068a394a476e51036b84ea26)]
+-  Update docker-image.yml [[6e83448](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/6e8344873203590a0d47990846187a80c4c6c676)]
+-  Merge pull request [#10](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/10) from LucasMonteiroi/feat/actions [[86ff339](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/86ff339f792097673122304e73f49119a1a439a6)]
+-  Merge pull request [#9](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/9) from LucasMonteiroi/feat/actions [[b51e89d](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/b51e89ded90445304ffe742061a99c21cda5b618)]
+-  Merge pull request [#8](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/8) from LucasMonteiroi/feat/actions [[4cf47a1](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/4cf47a1642a8c0f988ae6d1b4982f2657d7f1013)]
+- 📝 : update CHANGELOG.md [[15c7e44](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/15c7e44b5ca2651b7883490039573063f1fc3e4b)]
+
+
 <a name="0.0.4"></a>
 ## 0.0.4 (2022-06-15)
 
