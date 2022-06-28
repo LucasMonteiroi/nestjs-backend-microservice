@@ -9,7 +9,7 @@ RUN yarn
 
 COPY . .
 
-RUN yarn start:prod  
+RUN yarn build  
 
 
 # Production Image
