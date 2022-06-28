@@ -14,6 +14,9 @@ export class TypeOrmService implements TypeOrmOptionsFactory {
       entities: getMetadataArgsStorage().tables.map((tbl) => tbl.target),
       autoLoadEntities: true,
       logging: true,
+      ssl: {
+        rejectUnauthorized: false,
+      },
     };
   }
 }
