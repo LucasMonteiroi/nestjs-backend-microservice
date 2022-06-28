@@ -1,0 +1,87 @@
+name: CD
+
+on:
+  workflow_run:
+    workflows: ['CI']
+    types:
+      - completed
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      APP_NAME: nestjs-backend-microservice
+      APP_PORT: 3000
+      APP_NETWORK: backend-microservice-network
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Docker metadata
+        id: meta
+        uses: docker/metadata-action@v3
+        with:
+          images: |
+            docker.io/${{ github.repository }}
+            ghcr.io/${{ github.repository }}
+          tags: |
+            type=ref,event=branch
+            type=semver,pattern={{version}}
+            type=semver,pattern={{major}}.{{minor}}
+          flavor: |
+            latest=true
+
+      - name: Get commit
+        id: git
+        run: |
+          echo "::set-output name=short_sha::$(git rev-parse --short HEAD)"
+
+      - name: Git
+        run: |
+          echo Branch name is: ${{ github.ref_name }}
+          echo Short sha: ${{ steps.git.outputs.short_sha}}
+          echo Version is: ${{ steps.version.outputs.current-version}}
+
+      - name: Environment
+        run: |
+          echo APP_NAME is: ${{ env.APP_NAME}}
+          echo APP_PORT is: ${{ env.APP_PORT}}
+          echo APP_NETWORK is: ${{ env.APP_NETWORK}}
+
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
+      
+      - name: Login to Github Packages
+        uses: docker/login-action@v1
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GHCR_PAT }}
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v2
+
+      - name: Set up Docker Buildx
+        id: buildx
+        uses: docker/setup-buildx-action@v1
+        
+      - uses: actions/checkout@v3
+      - name: Get Dockerfile
+        run: cp ./docker/Dockerfile Dockerfile
+
+      - id: push-image
+        name: Build image and push to Docker Hub and GitHub Container Registry
+        uses: docker/build-push-action@v2
+        with:
+          context: ./
+          builder: ${{ steps.buildx.outputs.name }}
+          tags: ghcr.io/${{ secrets.DOCKERHUB_USERNAME }}/nestjs-backend-microservice:latest
+          push: true
+
+      - name: Image digest
+        run: 'echo Digest: ${{ steps.push-image.outputs.digest }}'
