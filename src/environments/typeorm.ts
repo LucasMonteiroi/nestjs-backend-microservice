@@ -1,7 +1,7 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
 
-const url = String(process.env.DATABASE_URL || '');
+const url = String(process.env.POSTGRES_URL || '');
 
 const databaseConfig = url
   .split(' ')
