@@ -3,9 +3,9 @@ import { MiddlewareConsumer, Module } from '@nestjs/common';
 import { ConfigModule } from '@nestjs/config';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { WinstonModule } from 'nest-winston';
-import { HealthModule } from 'src/health/health.module';
 import { MorganMiddleware } from './middlewares/morgan.middleware';
 import helmet from 'helmet';
+import { HealthModule } from '@health/health.module';
 
 @Module({
   controllers: [],
