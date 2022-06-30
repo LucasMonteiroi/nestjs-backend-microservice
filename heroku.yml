@@ -1,3 +1,6 @@
+run:
+  command: 
+  - echo "teste"
 build:
   docker:
     web: Dockerfile
