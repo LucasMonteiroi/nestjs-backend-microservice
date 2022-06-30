@@ -1,14 +1,14 @@
 name: CI
 on:
-  push:
-    branches:
-      - 'staging'
   pull_request:
     branches:
       - 'staging'
+    types:
+      - closed
 
 jobs:
-  build:
+  if_merged:
+    if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
