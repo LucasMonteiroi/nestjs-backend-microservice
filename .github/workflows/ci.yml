@@ -3,12 +3,14 @@ on:
   pull_request:
     branches:
       - 'staging'
-    types:
-      - closed
+    types: [closed]
+
+  workflow_dispatch:
 
 jobs:
-  if_merged:
-    if: github.event.pull_request.merged == true
+  build:
+    if_merged:
+      if: github.event.pull_request.merged == true
     runs-on: ubuntu-latest
 
     steps:
