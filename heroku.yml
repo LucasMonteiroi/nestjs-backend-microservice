@@ -1,2 +1,5 @@
+build:
+  docker:
+    web: Dockerfile
 run:
-  web: cp ./docker/Dockerfile Dockerfile && docker build
+  web: npm run start:prod
