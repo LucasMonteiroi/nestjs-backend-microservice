@@ -47,6 +47,12 @@
     "typeorm": "^0.3.6",
     "winston": "^3.7.2"
   },
+  "resolutions": {
+    "@types/eslint": "8.4.3"
+  },
+  "overrides": {
+    "@types/eslint": "8.4.3"
+  },
   "devDependencies": {
     "@nestjs/cli": "^8.0.0",
     "@nestjs/schematics": "^8.0.0",
