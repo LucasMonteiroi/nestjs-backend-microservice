@@ -6,7 +6,7 @@
     {
       "label": "up-container",
       "type": "shell",
-      "command": "docker-compose up -d --force-recreate",
+      "command": "cd app && docker-compose up -d --force-recreate",
       "presentation": {
         "revealProblems": "onProblem",
         "close": true
@@ -16,7 +16,7 @@
     {
       "label": "down-container",
       "type": "shell",
-      "command": "docker-compose down --rmi local",
+      "command": "cd app && docker-compose down --rmi local",
       "presentation": {
         "revealProblems": "onProblem",
         "close": true

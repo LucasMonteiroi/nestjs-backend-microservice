@@ -1,0 +1,36 @@
+project_name     = "mysandbox-terraform"
+project_app_path = "../."
+
+# HEROKU
+## develop
+heroku_develop = {
+  replications = 1
+  stack        = "web"
+  region       = "us"
+  buildpacks   = ["heroku/nodejs"]
+  size         = "free"
+  database     = "heroku-postgresql:hobby-dev"
+}
+
+
+## staging
+heroku_staging = {
+  replications = 1
+  stack        = "web"
+  region       = "us"
+  buildpacks   = ["heroku/nodejs"]
+  size         = "free"
+  database     = "heroku-postgresql:hobby-dev"
+}
+
+## production
+heroku_production = {
+  replications = 1
+  stack        = "web"
+  region       = "us"
+  buildpacks   = ["heroku/nodejs"]
+  size         = "free"
+  database     = "heroku-postgresql:hobby-dev"
+}
+
+
