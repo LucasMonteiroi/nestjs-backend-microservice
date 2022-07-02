@@ -1,5 +1,60 @@
 # Changelog
 
+<a name="0.0.6"></a>
+## 0.0.6 (2022-07-02)
+
+### Changed
+
+- 🔧 :  add git ignore todo extension [[2dcb2e7](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/2dcb2e71691d741ac0dd31a3299837168f3b9c6d)]
+- 🔧 :  add folders and files [[8a5da27](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/8a5da2767202823c1043a2b7edaea40fbb5ddbcf)]
+- 🔧 :  dockerfile config for heroku and typeorm get env vars [[59a7c03](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/59a7c03bffd6952e64ff3df523d28c0cf1c7aff7)]
+- 🔧 : (modules) add ssl to typeOrm [[75160c6](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/75160c6fdc28debf3460b911e8b7c1f661f2d943)]
+
+### Removed
+
+- 🔥 :  remove gitignore files and folders [[cbb5541](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/cbb55414dca836af6df6e9814c8a6b739dcc4c96)]
+
+### Fixed
+
+- 💚 :  update ci only when pr merged [[acef040](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/acef040f8e733aa343c963cf1078953e5594537c)]
+- 💚 :  update ci yml [[b018482](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/b018482c7357d8a06bddf126b96879f6f3541873)]
+- 💚 :  fix ci yml [[9442db6](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/9442db6040133fef4dd570aeea83a6406782491b)]
+- 💚 :  update ci yml [[d0bf8a0](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/d0bf8a0f6ab1fea63ad7fc2027951051aa4726cf)]
+- 💚 :  remove type closed [[b4ec8cf](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/b4ec8cfd2f73c18196ee9846c5ed170620db7e17)]
+- 💚 :  fix ci yml [[d92de21](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/d92de21b3bbb57f5a660e116a9e073dcc3f72931)]
+- 💚 :  ci executed only when pull request is merged [[57e11dd](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/57e11ddaf885ceba6db373d06e5669a7230292d1)]
+- 🚑 :  fix package error [[89be0bd](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/89be0bd6d87c53eb5198de28f0360077fbac6b37)]
+- 🚑 :  fix eslint error on package 8.4.4 [[e4623a6](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/e4623a63a314f624ec16d90d207e4a84910f11fe)]
+- 💚 :  setup heroku deploy on ci-cd [[ae027c5](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ae027c57595f057069a29db09e5236dd33bf4e15)]
+- 💚 :  fix heroku yml [[5079940](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/50799404f77f5b48e62745c2317cb46cb467c35c)]
+- 🐛 :  config typeorm [[2233832](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/2233832c38bf97d95fffd4e80699c6572cb4d94a)]
+- 💚 :  keep deploy only in main [[efdca02](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/efdca02c055aedaae1d9778e84ed478eda1a7172)]
+
+### Miscellaneous
+
+-  v0.0.6 [[63a8cf4](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/63a8cf43fe9521469e256176936f55350788f76b)]
+-  Merge branch &#x27;develop&#x27; of https://github.com/LucasMonteiroi/nestjs-backend-microservice into develop [[7a8b9cf](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/7a8b9cf0e07927b4b989d52562a8179df57be7aa)]
+-  Merge branch &#x27;staging&#x27; into develop [[d2a6850](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/d2a68504b168f219106d1cb1e15cf5dcabf68c53)]
+-  Merge pull request [#26](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/26) from LucasMonteiroi/develop [[2242309](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/22423094b86f121cfbaaf16ba891c35eaebfbe38)]
+-  Merge pull request [#25](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/25) from LucasMonteiroi/develop [[132c055](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/132c05596d8c96218c19dfb3b22a89a307994801)]
+-  Merge pull request [#24](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/24) from LucasMonteiroi/develop [[8151501](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/8151501a78c056119cd4dc986271d8e291b9bdd8)]
+-  Merge pull request [#23](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/23) from LucasMonteiroi/develop [[142dc79](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/142dc79104e36f954bf7cf93c0967a644b944564)]
+-  Merge pull request [#22](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/22) from LucasMonteiroi/develop [[fbe3d42](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/fbe3d420ae0a07ebcbf56e10a4dc528c8dea247d)]
+-  Merge pull request [#21](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/21) from LucasMonteiroi/develop [[667dc72](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/667dc723abbbcbe2943c16f8dddb4cbcd25b84d3)]
+- 🚀 :  fix heroku yml [[ccd4569](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ccd4569497976d0967a951db5379cc35933aaa35)]
+- 🚀 :  heroku yml [[8b3daf1](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/8b3daf173627da00c5007fca88476990b53c9b32)]
+- 🚀 :  heroku [[8527a0d](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/8527a0d76611854a59d84fc25fe627195aefa4b1)]
+-  Merge pull request [#20](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/20) from LucasMonteiroi/staging [[4c46ac1](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/4c46ac111177f7662e1d44363c45d4dec1648eaf)]
+- 🚀 :  update heroku yml and dockerfile [[29c734d](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/29c734dec1606e79d148f167700cbe49810eb3f4)]
+- 🐳 :  dockerfile command [[fa75920](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/fa75920854b70982b8d8469867b4bd754700fe02)]
+- 🚀 :  update docker folder [[2501b1e](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/2501b1ec290f2fbf23375cadb6241654f032e979)]
+-  Merge pull request [#19](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/19) from LucasMonteiroi/develop [[3c1bd6b](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/3c1bd6b815b8ac2c4639e7e8a4354541da1dfd8e)]
+- 🚀 :  heroku deploy config [[be65aae](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/be65aaeb4683f31b104813a1eac863a3a41f754b)]
+-  Merge pull request [#18](https://github.com/LucasMonteiroi/nestjs-backend-microservice/issues/18) from LucasMonteiroi/develop [[74a1e4b](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/74a1e4bc4bf11cac92b2e672b7804b17e0bacc02)]
+- 📝 :  add badges from sonarcloud [[ff2cea7](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ff2cea7cfa8c03d9edff5d49e509741b243ca26a)]
+- 📝 : update CHANGELOG.md [[c8f7331](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/c8f7331853d2e9b81a902acf860a8ba1f46ca294)]
+
+
 <a name="0.0.5"></a>
 ## 0.0.5 (2022-06-16)
 
