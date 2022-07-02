@@ -5,24 +5,10 @@ WORKDIR /app
 
 COPY package.json .
 
-RUN yarn
+RUN npm i
 
 COPY . .
 
-RUN yarn build  
+RUN npm run build  
 
-
-# Production Image
-FROM node:lts-alpine as main
-
-WORKDIR /app
-EXPOSE 3000
-
-COPY package.json yarn.lock ./
-RUN touch .env
-
-RUN set -x && yarn --production=true
-
-COPY --from=development /app/dist ./dist
-
-CMD ["yarn", "start:prod"]
+CMD ["npm", "run", "start:prod"]
