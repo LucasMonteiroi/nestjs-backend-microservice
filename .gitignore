@@ -139,3 +139,6 @@ terraform/.terraform
 
 # husky
 .husky/
+
+# todo extension
+*.todo
