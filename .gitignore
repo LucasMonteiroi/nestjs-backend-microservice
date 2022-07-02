@@ -128,3 +128,14 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+yarn.lock
+
+# terraform
+terraform/.terraform
+*.tfstate
+*.tfstate.backup
+*.tfvars
+*.hcl
+
+# husky
+.husky/
