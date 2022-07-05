@@ -16,18 +16,18 @@ export class TasksService {
   }
 
   async find(): Promise<Task[]> {
-    return await this.taskRepository.find();
+    return this.taskRepository.find();
   }
 
   async findById(id: string): Promise<Task> {
-    return await this.taskRepository.findOne({
+    return this.taskRepository.findOne({
       where: {
         id,
       },
     });
   }
 
-  async update(task: Partial<Task>): Promise<boolean> {
+  async update(task: Partial<Task>): Promise<any> {
     const updated = await this.taskRepository.update(
       {
         id: task.id,
@@ -35,15 +35,17 @@ export class TasksService {
       task,
     );
 
-    if (updated.affected) return true;
-    else return false;
+    if (updated.affected) {
+      return this.findById(task.id);
+    } else {
+      return { updated: false };
+    }
   }
 
-  async delete(id: string): Promise<boolean> {
-    const foundTask = await this.findById(id);
-    const deleted = await this.taskRepository.delete(foundTask);
+  async delete(id: string): Promise<any> {
+    const deleted = await this.taskRepository.delete(id);
 
-    if (deleted.affected) return true;
-    else return false;
+    if (deleted.affected) return { deleted: true };
+    else return { deleted: false };
   }
 }

@@ -30,23 +30,22 @@ What is needed to set up the dev environment. For instance, global dependencies 
 ## Project structure
 
 ```
-🗃️
-├─ .czrc
-├─ .env.example
-├─ .eslintrc.js
+📦
+├─ .czrc
+├─ .env.example
+├─ .env.test
+├─ .eslintrc.js
 ├─ .github
 │  └─ workflows
-│     ├─ cd.yml
-│     ├─ ci.yml
-│     └─ greetings.yml
+│     ├─ cd.yml
+│     ├─ ci.yml
+│     └─ greetings.yml
 ├─ .gitignore
-├─ .husky
-│  └─ commit-msg
-├─ .nvmrc
-├─ .prettierrc
+├─ .nvmrc
+├─ .prettierrc
 ├─ .vscode
-│  ├─ launch.json
-│  └─ tasks.json
+│  ├─ launch.json
+│  └─ tasks.json
 ├─ CHANGELOG.md
 ├─ LICENSE
 ├─ README.md
@@ -60,6 +59,7 @@ What is needed to set up the dev environment. For instance, global dependencies 
 │  └─ rabbitmq
 │     ├─ definitions.json
 │     └─ rabbitmq.conf
+├─ heroku.yml
 ├─ nest-cli.json
 ├─ package.json
 ├─ scripts
@@ -74,10 +74,8 @@ What is needed to set up the dev environment. For instance, global dependencies 
 │  │     └─ index.ts
 │  ├─ core
 │  │  ├─ core.module.ts
-│  │  ├─ filters
-│  │  │  └─ http-exception-filter.ts
-│  │  └─ middlewares
-│  │     └─ morgan.middleware.ts
+│  │  └─ filters
+│  │     └─ http-exception-filter.ts
 │  ├─ environments
 │  │  ├─ index.ts
 │  │  └─ typeorm.ts
@@ -88,26 +86,29 @@ What is needed to set up the dev environment. For instance, global dependencies 
 │  ├─ modules
 │  │  └─ tasks
 │  │     ├─ controllers
-│  │     │  ├─ tasks.controller.spec.ts
 │  │     │  └─ tasks.controller.ts
 │  │     ├─ dto
 │  │     │  └─ task.dto.ts
 │  │     ├─ entities
 │  │     │  └─ task.entity.ts
 │  │     ├─ services
-│  │     │  ├─ tasks.service.spec.ts
 │  │     │  └─ tasks.service.ts
 │  │     └─ tasks.module.ts
 │  └─ swagger
+│     ├─ index.ts
 │     ├─ swagger.config.ts
 │     ├─ swagger.interface.ts
 │     └─ swagger.ts
 ├─ test
-│  ├─ app.e2e-spec.ts
-│  └─ jest-e2e.json
+│  ├─ app.e2e.spec.ts
+│  ├─ core.e2e.spec.ts
+│  ├─ health.controller.e2e.spec.ts
+│  ├─ jest-e2e.json
+│  ├─ swagger.e2e.spec.ts
+│  ├─ tasks.service.e2e.spec.ts
+│  └─ typeorm.e2e.spec.ts
 ├─ tsconfig.build.json
-├─ tsconfig.json
-└─ yarn.lock
+└─ tsconfig.json
 ```
 
 ## Getting started

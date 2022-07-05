@@ -10,12 +10,11 @@ export class WinstonConfigService implements WinstonModuleOptionsFactory {
   setupFormat() {
     return winston.format.combine(
       winston.format.printf((transformableInfo) => {
-        const message = `[${new Date().toLocaleString()}]: [${transformableInfo.level.toUpperCase()}] [Winston] [${
+        return `[${new Date().toLocaleString()}]: [${transformableInfo.level.toUpperCase()}] [Winston] [${
           transformableInfo.context
         }] ${transformableInfo.message} ${
           transformableInfo.stack ? transformableInfo.stack : ''
         }`;
-        return message;
       }),
     );
   }
