@@ -27,7 +27,7 @@ export class TasksService {
     });
   }
 
-  async update(task: Partial<Task>): Promise<boolean> {
+  async update(task: Partial<Task>): Promise<any> {
     const updated = await this.taskRepository.update(
       {
         id: task.id,
@@ -35,15 +35,17 @@ export class TasksService {
       task,
     );
 
-    if (updated.affected) return true;
-    else return false;
+    if (updated.affected) {
+      return this.findById(task.id);
+    } else {
+      return { updated: false };
+    }
   }
 
-  async delete(id: string): Promise<boolean> {
-    const foundTask = await this.findById(id);
-    const deleted = await this.taskRepository.delete(foundTask);
+  async delete(id: string): Promise<any> {
+    const deleted = await this.taskRepository.delete(id);
 
-    if (deleted.affected) return true;
-    else return false;
+    if (deleted.affected) return { deleted: true };
+    else return { deleted: false };
   }
 }
