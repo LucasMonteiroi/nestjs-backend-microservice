@@ -1,4 +1,4 @@
-import { TYPEORM } from '@environments';
+import { TYPEORM } from '../../environments';
 import { Injectable } from '@nestjs/common';
 import { TypeOrmOptionsFactory, TypeOrmModuleOptions } from '@nestjs/typeorm';
 import { getMetadataArgsStorage } from 'typeorm';

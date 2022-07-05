@@ -6,15 +6,13 @@ const multipleDatabase = String(process.env.POSTGRES_MULTIPLE_DATABASES || '');
 
 const databaseConfig = { url: databaseUrl };
 
-const databases = multipleDatabase.split(',');
+const databases = multipleDatabase.replace(/\s/g, '').split(',');
 let databaseName = '';
 let testDatabaseName = '';
 
 if (databases.length > 1) {
   databaseName = databases[0];
   testDatabaseName = databases[1];
-} else {
-  databaseName = databases.shift();
 }
 
 const rawDatabaseConfig = {
@@ -24,7 +22,7 @@ const rawDatabaseConfig = {
     : undefined,
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
-  database: databaseName,
+  database: databaseName.length > 1 ? databaseName : 'root',
 };
 
 const rawTestDatabaseConfig = {
@@ -34,7 +32,7 @@ const rawTestDatabaseConfig = {
     : undefined,
   username: process.env.POSTGRES_USER,
   password: process.env.POSTGRES_PASSWORD,
-  database: testDatabaseName,
+  database: testDatabaseName.length > 1 ? testDatabaseName : 'test',
 };
 
 export const TYPEORM = {
