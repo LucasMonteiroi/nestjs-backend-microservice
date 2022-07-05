@@ -1,4 +1,4 @@
-name: Deploy to Heroku
+name: CD
 
 on:
     workflow_run:
