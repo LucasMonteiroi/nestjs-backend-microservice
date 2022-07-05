@@ -7,8 +7,6 @@ on:
       - completed
     branches:
       - 'staging'
-  workflow_dispatch:
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
