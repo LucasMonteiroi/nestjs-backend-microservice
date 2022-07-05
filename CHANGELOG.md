@@ -1,5 +1,35 @@
 # Changelog
 
+<a name="0.0.7"></a>
+## 0.0.7 (2022-07-05)
+
+### Added
+
+- ✅ : (tests) add e2e tests [[c78f35b](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/c78f35b4094f5420b56d465667d3c170e27a068a)]
+
+### Changed
+
+- ♻️ :  removing code smells [[ed5832c](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ed5832c7dfa1b12f78cffb5fc811ab6fde6a6c13)]
+- 🎨 : (config) add swagger index [[512cd20](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/512cd20f799077222a7190b7eb342a6b494d2e04)]
+- ♻️ : (modules) update health module [[ea737e8](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/ea737e8310c70283de1cc1bf2adc335a083dff15)]
+- ♻️ : (modules) change return way on task service [[f723e02](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/f723e0226e249fe91b679599a01b0b8153c5ffac)]
+- ♻️ : (config) changes in typeorm configuration and tests config [[200fa68](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/200fa6810f994fe2361037396c6675767ebe256e)]
+- ♻️ : (config) removing unused properties [[bfd0b21](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/bfd0b21ca96ebad6452a8256722961e8f9e77a75)]
+
+### Removed
+
+- 🔥 : (config) removing morgan [[48b67a8](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/48b67a89784be84343766729f7bf54ae0370e4c4)]
+
+### Miscellaneous
+
+-  v0.0.7 [[0fbf9a2](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/0fbf9a255a40667ba1f31a84aae2275ce0d28d9b)]
+- 📝 :  update readme files structure [[a738fbc](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/a738fbcfce7384bf68e1560e075280748a0f0c43)]
+-  Merge branch &#x27;feat/tasks-tests&#x27; into develop [[c71de56](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/c71de56bf08a68cee63a7fa84e8cfce3d71ac673)]
+- 📝 : update CHANGELOG.md [[617467e](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/617467ecea43003863dc399eeae9f602dafe047c)]
+-  Merge branch &#x27;develop&#x27; into feat/tasks-tests [[5a489de](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/5a489de97649c76dd3340779af7550b5fbe09b01)]
+- 🚧 : (tests) implementation of tests in task module [[e71eb54](https://github.com/LucasMonteiroi/nestjs-backend-microservice/commit/e71eb545bcf10f67b42a2fdbcf6514074091641d)]
+
+
 <a name="0.0.6"></a>
 ## 0.0.6 (2022-07-02)
 
