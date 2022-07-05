@@ -1,7 +1,7 @@
 # NestJS Backend Microservice &middot;
 
 ![GitHub top language](https://img.shields.io/github/languages/top/lucasmonteiroi/nestjs-backend-microservice)
-[![GitHub package.json version](https://img.shields.io/github/package-json/v/lucasmonteiroi/nestjs-backend-microservice)](https://github.com/LucasMonteiroi/nestjs-backend-microservice/blob/develop/package.json)
+![GitHub package.json version (branch)](https://img.shields.io/github/package-json/v/lucasmonteiroi/nestjs-backend-microservice/staging)
 [![GitHub repo size](https://img.shields.io/github/repo-size/lucasmonteiroi/nestjs-backend-microservice)](https://github.com/LucasMonteiroi/nestjs-backend-microservice)
 ![GitHub last commit](https://img.shields.io/github/last-commit/lucasmonteiroi/nestjs-backend-microservice)
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/lucasmonteiroi/nestjs-backend-microservice/CI)
@@ -14,6 +14,7 @@
 [![Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=LucasMonteiroi_nestjs-backend-microservice&metric=vulnerabilities)](https://sonarcloud.io/summary/new_code?id=LucasMonteiroi_nestjs-backend-microservice)
 [![Bugs](https://sonarcloud.io/api/project_badges/measure?project=LucasMonteiroi_nestjs-backend-microservice&metric=bugs)](https://sonarcloud.io/summary/new_code?id=LucasMonteiroi_nestjs-backend-microservice)
 [![Security Rating](https://sonarcloud.io/api/project_badges/measure?project=LucasMonteiroi_nestjs-backend-microservice&metric=security_rating)](https://sonarcloud.io/summary/new_code?id=LucasMonteiroi_nestjs-backend-microservice)
+[![codecov](https://codecov.io/gh/LucasMonteiroi/nestjs-backend-microservice/branch/develop/graph/badge.svg?token=4ER0O4WDPA)](https://codecov.io/gh/LucasMonteiroi/nestjs-backend-microservice)
 
 A backend microservice to make easily the development
 
