@@ -22,7 +22,7 @@ export class HealthController {
   @HealthCheck()
   @ApiOperation({ summary: 'Database health check' })
   async checkDatabases() {
-    return await this.health.check([
+    return this.health.check([
       () => this.typeOrmIndicator.pingCheck('typeorm'),
     ]);
   }

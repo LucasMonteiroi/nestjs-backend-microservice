@@ -19,6 +19,6 @@ describe('Swagger (e2e)', () => {
   });
 
   it('/api (GET)', async () => {
-    return await request(app.getHttpServer()).get('/').expect(200);
+    return request(app.getHttpServer()).get('/').expect(200);
   });
 });

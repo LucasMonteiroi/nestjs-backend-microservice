@@ -115,7 +115,7 @@ describe('Health', () => {
     });
 
     it('should return an Service Unavailable health check of storage', async () => {
-      return await supertest
+      return supertest
         .agent(app.getHttpServer())
         .get('/health/memory')
         .set('Accept', 'application/json')

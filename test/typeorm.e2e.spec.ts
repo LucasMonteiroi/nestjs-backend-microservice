@@ -3,13 +3,11 @@ import { INestApplication } from '@nestjs/common';
 
 import { TYPEORM } from '../src/environments';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import Task from '../src/modules/tasks/entities/task.entity';
 import { TasksModule } from '../src/modules/tasks/tasks.module';
-import { Repository, getMetadataArgsStorage } from 'typeorm';
+import { getMetadataArgsStorage } from 'typeorm';
 
 describe('Task', () => {
   let app: INestApplication;
-  let repository: Repository<Task>;
   jest.setTimeout(20000);
 
   beforeAll(async () => {
@@ -29,7 +27,6 @@ describe('Task', () => {
     }).compile();
 
     app = module.createNestApplication();
-    repository = module.get('TaskRepository');
     await app.init();
   });
 

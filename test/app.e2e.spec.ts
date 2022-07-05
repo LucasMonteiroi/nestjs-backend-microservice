@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { HttpException, INestApplication, Logger } from '@nestjs/common';
+import { INestApplication } from '@nestjs/common';
 
 import { HttpModule } from '@nestjs/axios';
 import { AppModule } from '../src/app.module';
