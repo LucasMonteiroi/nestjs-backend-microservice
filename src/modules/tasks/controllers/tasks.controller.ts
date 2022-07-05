@@ -60,7 +60,7 @@ export class TasksController {
   @ApiOperation({ summary: 'Update task' })
   @ApiResponse({
     status: 200,
-    description: 'Result of update',
+    description: 'Update result',
     type: Boolean,
   })
   public async updateTask(
@@ -78,7 +78,7 @@ export class TasksController {
   @ApiOperation({ summary: 'Delete task' })
   @ApiResponse({
     status: 200,
-    description: 'Result of delete',
+    description: 'Delete result',
     type: Boolean,
   })
   public async deleteTask(@Param('id', ParseUUIDPipe) id: string) {
