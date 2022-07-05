@@ -20,9 +20,10 @@
     "paths": {
       "@config": ["src/config"],
       "@environments": ["src/environments"],
+      "@health/*": ["src/health/*"],
       "@shared": ["src/shared"],
       "@utils": ["src/utils"]
     }
   },
-  "exclude": ["node_modules", "coverage", "document", "dist", "**/*.spec.ts"]
+  "exclude": ["node_modules", "coverage", "document", "dist"]
 }

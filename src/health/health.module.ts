@@ -1,4 +1,4 @@
-import { TypeOrmService } from '@config';
+import { TypeOrmService } from '../config';
 import { Module } from '@nestjs/common';
 import { TerminusModule } from '@nestjs/terminus';
 import { TypeOrmModule } from '@nestjs/typeorm';
