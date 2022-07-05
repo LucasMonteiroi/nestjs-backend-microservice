@@ -27,7 +27,7 @@ export class TasksController {
   })
   @ApiBody({ type: TaskDto })
   public async createTask(@Body() task: TaskDto) {
-    return await this.taskService.create({
+    return this.taskService.create({
       description: task.description,
       done: task.done,
     });
@@ -41,7 +41,7 @@ export class TasksController {
     type: Task,
   })
   public async getTaskbyId(@Param('id', ParseUUIDPipe) id: string) {
-    return await this.taskService.findById(id);
+    return this.taskService.findById(id);
   }
 
   @Get()
@@ -53,7 +53,7 @@ export class TasksController {
     isArray: true,
   })
   public async getTask() {
-    return await this.taskService.find();
+    return this.taskService.find();
   }
 
   @Patch(':id')
@@ -67,7 +67,7 @@ export class TasksController {
     @Param('id', ParseUUIDPipe) id: string,
     @Body() dto: TaskDto,
   ) {
-    return await this.taskService.update({
+    return this.taskService.update({
       id,
       description: dto.description,
       done: dto.done,
@@ -82,6 +82,6 @@ export class TasksController {
     type: Boolean,
   })
   public async deleteTask(@Param('id', ParseUUIDPipe) id: string) {
-    return await this.taskService.delete(id);
+    return this.taskService.delete(id);
   }
 }

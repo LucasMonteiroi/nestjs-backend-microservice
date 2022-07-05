@@ -16,11 +16,11 @@ export class TasksService {
   }
 
   async find(): Promise<Task[]> {
-    return await this.taskRepository.find();
+    return this.taskRepository.find();
   }
 
   async findById(id: string): Promise<Task> {
-    return await this.taskRepository.findOne({
+    return this.taskRepository.findOne({
       where: {
         id,
       },
