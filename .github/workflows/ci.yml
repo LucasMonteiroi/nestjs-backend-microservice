@@ -31,15 +31,3 @@ jobs:
       - name: Environment
         run: |
           echo APP_NAME is: ${{ secrets.APP_NAME}}
-
-      - name: Generate coverage report
-        run: |
-          yarn test:cov --coverageDirectory ./
-          curl -Os https://uploader.codecov.io/latest/linux/codecov 
-          chmod +x codecov 
-          ./codecov
-
-      - name: Upload coverage to Codecov
-        uses: codecov/codecov-action@v3
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }}
