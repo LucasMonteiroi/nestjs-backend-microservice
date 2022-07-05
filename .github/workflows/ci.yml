@@ -32,9 +32,6 @@ jobs:
         run: |
           echo APP_NAME is: ${{ secrets.APP_NAME}}
 
-  generate-coverage:
-    runs-on: ubuntu-latest
-    steps:
       - name: Upload coverage reports to Codecov
         run: |
           ./coverage/codecov -t ${{ secrets.CODECOV_TOKEN}}
