@@ -31,3 +31,7 @@ jobs:
       - name: Environment
         run: |
           echo APP_NAME is: ${{ secrets.APP_NAME}}
+      
+      - name: Upload coverage reports to Codecov
+      run: |
+        ./coverage/codecov -t ${CODECOV_TOKEN}
