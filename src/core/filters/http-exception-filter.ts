@@ -18,9 +18,6 @@ export class GlobalHttpExceptionFilter
 
     response.status(status).json({
       statusCode: status,
-      timestamp: new Date().toISOString(),
-      // anything you can add in wrr response
-      path: request.url,
     });
   }
 }
