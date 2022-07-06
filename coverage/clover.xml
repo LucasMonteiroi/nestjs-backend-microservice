@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1657053469962" clover="3.2.0">
-  <project timestamp="1657053469962" name="All files">
-    <metrics statements="140" coveredstatements="140" conditionals="19" coveredconditionals="13" methods="29" coveredmethods="29" elements="188" coveredelements="182" complexity="0" loc="140" ncloc="140" packages="14" files="18" classes="18"/>
+<coverage generated="1657072987584" clover="3.2.0">
+  <project timestamp="1657072987584" name="All files">
+    <metrics statements="166" coveredstatements="166" conditionals="28" coveredconditionals="20" methods="35" coveredmethods="35" elements="229" coveredelements="221" complexity="0" loc="166" ncloc="166" packages="15" files="19" classes="19"/>
     <package name="src">
       <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="app.module.ts" path="/home/lucasmonteiroi/github/nestjs-backend-microservice/src/app.module.ts">
@@ -61,15 +61,45 @@
       </file>
     </package>
     <package name="src.core.filters">
-      <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
       <file name="http-exception-filter.ts" path="/home/lucasmonteiroi/github/nestjs-backend-microservice/src/core/filters/http-exception-filter.ts">
-        <metrics statements="6" coveredstatements="6" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <metrics statements="7" coveredstatements="7" conditionals="4" coveredconditionals="2" methods="1" coveredmethods="1"/>
         <line num="1" count="2" type="stmt"/>
         <line num="10" count="2" type="stmt"/>
         <line num="14" count="1" type="stmt"/>
         <line num="15" count="1" type="stmt"/>
         <line num="16" count="1" type="stmt"/>
-        <line num="18" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="19" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.core.pipes">
+      <metrics statements="23" coveredstatements="23" conditionals="5" coveredconditionals="5" methods="6" coveredmethods="6"/>
+      <file name="validation.pipe.ts" path="/home/lucasmonteiroi/github/nestjs-backend-microservice/src/core/pipes/validation.pipe.ts">
+        <metrics statements="23" coveredstatements="23" conditionals="5" coveredconditionals="5" methods="6" coveredmethods="6"/>
+        <line num="1" count="5" type="stmt"/>
+        <line num="8" count="5" type="stmt"/>
+        <line num="9" count="5" type="stmt"/>
+        <line num="10" count="5" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="15" count="14" type="cond" truecount="1" falsecount="0"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="19" count="13" type="stmt"/>
+        <line num="20" count="13" type="cond" truecount="3" falsecount="0"/>
+        <line num="21" count="5" type="stmt"/>
+        <line num="23" count="8" type="stmt"/>
+        <line num="24" count="8" type="stmt"/>
+        <line num="25" count="8" type="cond" truecount="1" falsecount="0"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="34" count="7" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="1" type="stmt"/>
+        <line num="49" count="13" type="stmt"/>
+        <line num="50" count="45" type="stmt"/>
       </file>
     </package>
     <package name="src.environments">
@@ -143,36 +173,38 @@
       </file>
     </package>
     <package name="src.modules.tasks.controllers">
-      <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+      <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
       <file name="tasks.controller.ts" path="/home/lucasmonteiroi/github/nestjs-backend-microservice/src/modules/tasks/controllers/tasks.controller.ts">
-        <metrics statements="17" coveredstatements="17" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
+        <metrics statements="18" coveredstatements="18" conditionals="0" coveredconditionals="0" methods="6" coveredmethods="6"/>
         <line num="1" count="4" type="stmt"/>
-        <line num="11" count="4" type="stmt"/>
         <line num="12" count="4" type="stmt"/>
         <line num="13" count="4" type="stmt"/>
         <line num="14" count="4" type="stmt"/>
-        <line num="18" count="4" type="stmt"/>
-        <line num="19" count="4" type="stmt"/>
-        <line num="29" count="4" type="stmt"/>
-        <line num="30" count="6" type="stmt"/>
-        <line num="43" count="4" type="stmt"/>
-        <line num="44" count="1" type="stmt"/>
-        <line num="55" count="4" type="stmt"/>
-        <line num="56" count="1" type="stmt"/>
-        <line num="66" count="4" type="stmt"/>
-        <line num="70" count="2" type="stmt"/>
-        <line num="84" count="4" type="stmt"/>
-        <line num="85" count="2" type="stmt"/>
+        <line num="15" count="4" type="stmt"/>
+        <line num="16" count="4" type="stmt"/>
+        <line num="21" count="4" type="stmt"/>
+        <line num="22" count="4" type="stmt"/>
+        <line num="32" count="4" type="stmt"/>
+        <line num="33" count="5" type="stmt"/>
+        <line num="46" count="4" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="58" count="4" type="stmt"/>
+        <line num="59" count="1" type="stmt"/>
+        <line num="69" count="4" type="stmt"/>
+        <line num="73" count="2" type="stmt"/>
+        <line num="87" count="4" type="stmt"/>
+        <line num="88" count="2" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.tasks.dto">
-      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
       <file name="task.dto.ts" path="/home/lucasmonteiroi/github/nestjs-backend-microservice/src/modules/tasks/dto/task.dto.ts">
-        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <metrics statements="5" coveredstatements="5" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
         <line num="1" count="4" type="stmt"/>
-        <line num="3" count="4" type="stmt"/>
-        <line num="5" count="4" type="stmt"/>
-        <line num="8" count="4" type="stmt"/>
+        <line num="2" count="4" type="stmt"/>
+        <line num="4" count="4" type="stmt"/>
+        <line num="7" count="4" type="stmt"/>
+        <line num="11" count="4" type="stmt"/>
       </file>
     </package>
     <package name="src.modules.tasks.entities">
@@ -200,8 +232,8 @@
         <line num="4" count="4" type="stmt"/>
         <line num="7" count="4" type="stmt"/>
         <line num="9" count="4" type="stmt"/>
-        <line num="13" count="6" type="stmt"/>
-        <line num="14" count="6" type="stmt"/>
+        <line num="13" count="5" type="stmt"/>
+        <line num="14" count="5" type="stmt"/>
         <line num="15" count="5" type="stmt"/>
         <line num="19" count="1" type="stmt"/>
         <line num="23" count="2" type="stmt"/>

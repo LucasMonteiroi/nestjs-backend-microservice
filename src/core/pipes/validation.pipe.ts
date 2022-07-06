@@ -13,7 +13,7 @@ import { HttpException } from '@nestjs/common/exceptions/http.exception';
 export class ValidationPipe implements PipeTransform<any> {
   async transform(value, metadata: ArgumentMetadata) {
     if (!value) {
-      throw new BadRequestException('No data submitted');
+      return new BadRequestException('No data submitted');
     }
 
     const { metatype } = metadata;
