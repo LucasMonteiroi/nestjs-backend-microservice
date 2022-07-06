@@ -7,14 +7,17 @@ import {
   ParseUUIDPipe,
   Patch,
   Post,
+  UsePipes,
 } from '@nestjs/common';
 import { ApiBody, ApiOperation, ApiResponse, ApiTags } from '@nestjs/swagger';
+import { ValidationPipe } from '../../../core/pipes/validation.pipe';
 import { TaskDto } from '../dto/task.dto';
 import Task from '../entities/task.entity';
 import { TasksService } from '../services/tasks.service';
 
 @ApiTags('tasks')
 @Controller('tasks')
+@UsePipes(new ValidationPipe())
 export class TasksController {
   constructor(private readonly taskService: TasksService) {}
 

@@ -14,9 +14,17 @@ export class GlobalHttpExceptionFilter
     const ctx = host.switchToHttp();
     const response = ctx.getResponse<Response>();
     const status = exception.getStatus();
+    const exceptionObj = exception.getResponse().valueOf();
+    let errors = {};
+
+    if (exceptionObj.hasOwnProperty('errors')) {
+      errors = exceptionObj['errors'];
+    }
 
     response.status(status).json({
       statusCode: status,
+      message: exception.message ? exception.message : 'Internal Server Error',
+      errors,
     });
   }
 }
