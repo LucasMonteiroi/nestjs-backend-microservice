@@ -1,6 +1,12 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { HttpException, HttpStatus, Logger } from '@nestjs/common';
+import {
+  BadRequestException,
+  HttpException,
+  HttpStatus,
+  Logger,
+} from '@nestjs/common';
 import { GlobalHttpExceptionFilter } from '../src/core/filters/http-exception-filter';
+import { ValidationPipe } from '../src/core/pipes/validation.pipe';
 
 const mockAppLoggerService = {
   info: jest.fn(),
@@ -31,12 +37,14 @@ const mockArgumentsHost = {
 
 describe('Core Module', () => {
   let service: GlobalHttpExceptionFilter;
+  let pipe: ValidationPipe;
 
   beforeEach(async () => {
     jest.clearAllMocks();
     const module: TestingModule = await Test.createTestingModule({
       providers: [
         GlobalHttpExceptionFilter,
+        ValidationPipe,
         {
           provide: Logger,
           useValue: mockAppLoggerService,
@@ -44,6 +52,7 @@ describe('Core Module', () => {
       ],
     }).compile();
     service = module.get<GlobalHttpExceptionFilter>(GlobalHttpExceptionFilter);
+    pipe = module.get<ValidationPipe>(ValidationPipe);
   });
 
   describe('All exception filter tests', () => {
@@ -66,6 +75,17 @@ describe('Core Module', () => {
       expect(mockStatus).toBeCalledTimes(1);
       expect(mockStatus).toBeCalledWith(HttpStatus.BAD_REQUEST);
       expect(mockJson).toBeCalledTimes(1);
+    });
+  });
+
+  describe('All pipes tests', () => {
+    it('should be defined', () => {
+      expect(pipe).toBeDefined();
+    });
+
+    it('Validation Pipe', async () => {
+      const response = await pipe.transform(null, { type: 'body' });
+      expect(response).toBeInstanceOf(BadRequestException);
     });
   });
 });

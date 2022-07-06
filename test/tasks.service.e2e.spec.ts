@@ -113,14 +113,14 @@ describe('Task', () => {
       );
     });
 
-    it('should handle a missing name', async () => {
+    it('should handle a missing description', async () => {
       await supertest
         .agent(app.getHttpServer())
         .post('/tasks')
         .set('Accept', 'application/json')
         .send({ none: 'test-none' })
         .expect('Content-Type', /json/)
-        .expect(500);
+        .expect(400);
     });
   });
 
