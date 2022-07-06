@@ -1,24 +1,6 @@
 version: '3'
 
 services:
-  rabbitmq:
-    container_name: amqp_rabbitmq
-    image: rabbitmq:management
-    restart: always
-    ports:
-      - 5672:5672
-      - 15672:15672
-    networks:
-      backend-microservices:
-        ipv4_address: 192.168.0.10
-    volumes:
-      - type: bind
-        source: ${PWD}/docker/rabbitmq/rabbitmq.conf
-        target: /etc/rabbitmq/rabbitmq.conf
-      - type: bind
-        source: ${PWD}/docker/rabbitmq/definitions.json
-        target: /etc/rabbitmq/definitions.json
-
   postgres:
     container_name: db_postgres
     image: postgres
@@ -55,7 +37,6 @@ services:
     restart: unless-stopped
     depends_on:
       - postgres
-      - rabbitmq
 
 volumes:
   backend_data: {}
