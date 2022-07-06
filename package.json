@@ -99,6 +99,7 @@
       "<rootDir>/dist/",
       "<rootDir>/coverage/",
       "<rootDir>/scripts/",
+      "<rootDir>/test/stress/",
       "<rootDir>/node_modules/",
       "<rootDir>/.eslintrc.js",
       "<rootDir>/commitlint.config.js",
