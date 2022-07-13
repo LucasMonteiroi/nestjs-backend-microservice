@@ -23,7 +23,7 @@ jobs:
           node-version: 14.x
       - uses: bahmutov/npm-install@v1
         with:
-          working-directory: ./
+          working-directory: ../
       - name: Run E2E tests
         run: |
           cp .env.example .env
