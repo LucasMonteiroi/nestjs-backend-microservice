@@ -23,6 +23,7 @@ jobs:
           node-version: 14.x
       - uses: bahmutov/npm-install@v1
         with:
+            useLockFile: false
             working-directory: /home/runner/work/nestjs-backend-microservice/
       - name: Run E2E tests
         run: |
