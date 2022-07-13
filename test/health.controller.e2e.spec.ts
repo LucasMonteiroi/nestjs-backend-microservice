@@ -84,7 +84,7 @@ describe('Health', () => {
     });
   });
 
-  describe('GET /memory', () => {
+  describe.skip('GET /memory', () => {
     it('should return an health check of storage', async () => {
       const { body } = await supertest
         .agent(app.getHttpServer())
