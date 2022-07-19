@@ -24,7 +24,7 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json --detectOpenHandles",
+    "test:e2e": "jest --config ./test/jest-e2e.json --detectOpenHandles --silent",
     "test:smoke": "tsc ./test/stress/smokeTest.ts && k6 run ./test/stress/smokeTest.js --env API_URL=http://localhost:3000",
     "test:stress": "tsc ./test/stress/stressTest.ts && k6 run ./test/stress/stressTest.js -e API_URL=http://localhost:3000",
     "test:spike": "tsc ./test/stress/spikeTest.ts && k6 run ./test/stress/spikeTest.js -e API_URL=http://localhost:3000",
