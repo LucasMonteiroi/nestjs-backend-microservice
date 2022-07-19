@@ -73,6 +73,4 @@ jobs:
           NODE_ENV: production
           DATABASE_URL: postgres://admin:wnbaohW7mn@localhost:${{ job.services.postgres.ports[5432] }}/authentication
       - name: Run Postman collection
-        run: |
-          npx newman run https://api.getpostman.com/collections/${{ secrets.COLLECTION_KEY}}?apikey=${{ secrets.POSTMAN_API_KEY}}
-           --environment https://api.getpostman.com/environments/${{ secrets.POSTMAN_ENV_KEY}}?apikey=${{ secrets.POSTMAN_API_KEY}}
+        run: npx newman run https://api.getpostman.com/collections/${{ secrets.COLLECTION_KEY}}?apikey=${{ secrets.POSTMAN_API_KEY}} --environment https://api.getpostman.com/environments/${{ secrets.POSTMAN_ENV_KEY}}?apikey=${{ secrets.POSTMAN_API_KEY}}
