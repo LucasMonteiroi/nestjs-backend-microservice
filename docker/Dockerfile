@@ -1,5 +1,5 @@
 # DEVELOPMENT
-FROM node:lts-alpine AS development
+FROM node:20.15.1-alpine3.20 AS development
 
 WORKDIR /app
 
